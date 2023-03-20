@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text"> Identifiant unique: {{ product.id }}</p>
+                        <p class="card-text"> Capacité de stockage: {{ product.storageCapacity }}</p>
+                        <p class="card-text"> Stock: {{ product.stock }}</p>
+                        <p class="card-text"> Prix: {{ product.price }} €</p>
+                        <div class="d-flex justify-content-between align-item-center">
+                            <a href="{{ path('product_update', {id: product.id }) }}" class="btn btn-color">View details</a>
+                            <a href="{{ path('product_delete', {id: product.id }) }}" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

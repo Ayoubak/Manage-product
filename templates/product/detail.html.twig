@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <br>
+    <br>
+    <div class="container">
+        {{ form_start(product) }}
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card mb-5 card-new">
+                    <div class="card-body">
+                        <h5 class="card-title">Nom de produit: {{ form_widget(product.name) }}</h5>
+                        <br>
+                        <h5 class="card-text"> Prix: {{ form_widget(product.price) }} €</h5>
+                        <br>
+                        <h5 class="card-text"> Capacité de stockage: {{ form_widget(product.storageCapacity) }}</h5>
+                        <br>
+                        <h5 class="card-text"> Stock: {{ form_widget(product.stock) }}</h5>
+                    </div>
+                <button type="submit" class="btn btn-color"> {{ action }}</button>
+                </div>
+            </div>
+        </div>
+        {{ form_end(product) }}
+    </div>
+{% endblock %}

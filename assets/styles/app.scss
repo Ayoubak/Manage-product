@@ -1,0 +1,49 @@
+@import "~bootstrap/scss/bootstrap";
+
+html, body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: white;
+	background-color: #77C3EC;
+	overflow-x: hidden;
+}
+
+.navbar {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+    background-color: #00308F!important;
+	overflow-x: hidden;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    padding: 12px 0;
+    color: white!important;
+  }
+
+.nav-link {
+    font-size: 20px;
+    padding: 12px 0;
+    color: white!important;
+}
+
+.card {
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    background-color: #00308F!important;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-color, .btn-color:hover, .btn-color:active {
+    background-color: #77C3EC!important;
+    color: white!important;
+    border: none!important;
+}
+
+.card-new {
+    height: 25em!important;
+}
