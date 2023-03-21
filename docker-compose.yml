@@ -19,7 +19,7 @@ services:
     depends_on: 
       database: 
         condition: service_healthy
-    image: 787b87f5e4a5
+    image: demo-app:latest
     ports:
       - "8080:80"
     environment:
