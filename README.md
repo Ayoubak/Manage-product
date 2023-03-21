@@ -1,7 +1,7 @@
 Projet permettant de manager des produits avec une simple interface graphique.
 
 Pour lancer le projet:\
-docker build . -f ./docker/Dockerfile\
+docker build . -f ./docker/Dockerfile -t demo-app\
 docker-compose up -d\
 http://127.0.0.1:8080/
 
